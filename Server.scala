@@ -7,6 +7,7 @@ object Server extends App {
         var socket = server.accept()
         var input = new BufferedReader(new InputStreamReader(socket.getInputStream()))
         var line = input.readLine()
+        System.out.println("Starting server!")
         while (line != null) {
             System.out.println(line)
         }
